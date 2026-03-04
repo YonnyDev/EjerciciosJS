@@ -17,7 +17,7 @@ function animateCursor() {
   // BUG 1: El factor LERP es 1, por lo que el ring se mueve instantáneo
   // (igual que el cursor), sin efecto de lag suave
   // CORRECCIÓN: Cambiar 1 por ?
-  ringX += (mouseX - ringX) * 0.12;
+  ringX += (mouseX - ringX) * 0.1;
   ringY += (mouseY - ringY) * 0.12;
   cursorRing.style.left = ringX + "px";
   cursorRing.style.top = ringY + "px";
